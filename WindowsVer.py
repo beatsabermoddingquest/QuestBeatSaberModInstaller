@@ -1,0 +1,10 @@
+import os
+print("This is the Windows version of the installer")
+print("Connect Quest now")
+input("enter when ready")
+print("Pending Authorization in Quest, if nothing appears, press enter and then it will appear")
+os.system("adb start-server")
+os.system("adb devices")
+input("Enter to install!")
+os.system("adb install com.weloveoculus.bmbf.apk")
+print("Adb Has Installed the app")
